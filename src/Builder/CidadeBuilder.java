@@ -13,7 +13,7 @@ public class CidadeBuilder extends PlanoBuilder{
 
     @Override
     public void buildPreco(int qntPessoa) {
-        plano.preco = 100 * qntPessoa;
+        System.out.println("VALOR:"+ qntPessoa * 200);
     }
 
     @Override
