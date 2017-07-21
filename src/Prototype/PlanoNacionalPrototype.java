@@ -9,13 +9,13 @@ package Prototype;
  *
  * @author bol.ana.santos
  */
-public class PlnaoNacionalPrototype extends PlanoPrototype{
+public class PlanoNacionalPrototype extends PlanoPrototype{
     
-    protected PlnaoNacionalPrototype(PlnaoNacionalPrototype especial) {
+    protected PlanoNacionalPrototype(PlanoNacionalPrototype especial) {
         this.qntPessoas = especial.getQntPessoas();
     }
 
-    public PlnaoNacionalPrototype() {
+    public PlanoNacionalPrototype() {
         qntPessoas = 0;
     }
     
@@ -30,6 +30,6 @@ public class PlnaoNacionalPrototype extends PlanoPrototype{
 
     @Override
     public PlanoPrototype clonar() {
-        return new PlnaoNacionalPrototype(this);
+        return new PlanoNacionalPrototype(this);
     }
 }

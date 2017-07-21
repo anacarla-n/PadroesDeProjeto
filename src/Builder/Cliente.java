@@ -20,12 +20,25 @@ public class Cliente {
         // TODO code application logic here
         Scanner ler = new Scanner(System.in);
         EmpresaDirector saude = new EmpresaDirector(new CidadeBuilder());
-	   
         System.out.println("Quantidade de Pessoas?");
-	
         saude.construirPlano(ler.nextInt());
 	PlanoProduct plano = saude.getPlano();
         System.out.println("\nValor: " + plano.preco);
+        
+        EmpresaDirector saude2 = new EmpresaDirector(new EstadoBuilder()); 
+        System.out.println("Quantidade de Pessoas?");
+        saude2.construirPlano(ler.nextInt());
+	PlanoProduct plano2 = saude2.getPlano();
+        System.out.println("\nValor: " + plano2.preco);
+
+        
+        
+        EmpresaDirector  saude3 = new EmpresaDirector(new NacionalBuilder()); 
+        System.out.println("Quantidade de Pessoas?");
+        saude3.construirPlano(ler.nextInt());
+	PlanoProduct plano3 = saude3.getPlano();
+        System.out.println("\nValor: " + plano3.preco);
+
 
         /*
 	    System.out.println();
